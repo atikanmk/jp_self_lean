@@ -8,9 +8,10 @@ function escapeRegex(str) {
   return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
-// Validate a MongoDB ObjectId from user input
-function isValidObjectId(id) {
-  return mongoose.Types.ObjectId.isValid(id);
+// Validate and cast a MongoDB ObjectId from user input
+function toObjectId(id) {
+  if (!mongoose.Types.ObjectId.isValid(id)) return null;
+  return new mongoose.Types.ObjectId(id);
 }
 
 // GET all vocabulary (with optional filter by jlptLevel and search)
@@ -23,10 +24,11 @@ router.get('/', async (req, res) => {
     }
     if (search && typeof search === 'string') {
       const safeSearch = escapeRegex(search.slice(0, 100));
+      const searchRegex = new RegExp(safeSearch, 'i');
       filter.$or = [
-        { japanese: { $regex: safeSearch, $options: 'i' } },
-        { thai: { $regex: safeSearch, $options: 'i' } },
-        { reading: { $regex: safeSearch, $options: 'i' } },
+        { japanese: searchRegex },
+        { thai: searchRegex },
+        { reading: searchRegex },
       ];
     }
     const vocabulary = await Vocabulary.find(filter).sort({ jlptLevel: 1, createdAt: 1 });
@@ -39,10 +41,9 @@ router.get('/', async (req, res) => {
 // GET a single vocabulary item by id
 router.get('/:id', async (req, res) => {
   try {
-    if (!isValidObjectId(req.params.id)) {
-      return res.status(400).json({ error: 'Invalid vocabulary ID' });
-    }
-    const vocab = await Vocabulary.findById(req.params.id);
+    const id = toObjectId(req.params.id);
+    if (!id) return res.status(400).json({ error: 'Invalid vocabulary ID' });
+    const vocab = await Vocabulary.findById(id);
     if (!vocab) return res.status(404).json({ error: 'Vocabulary not found' });
     res.json(vocab);
   } catch (err) {
@@ -64,10 +65,9 @@ router.post('/', async (req, res) => {
 // PUT update a vocabulary item
 router.put('/:id', async (req, res) => {
   try {
-    if (!isValidObjectId(req.params.id)) {
-      return res.status(400).json({ error: 'Invalid vocabulary ID' });
-    }
-    const vocab = await Vocabulary.findByIdAndUpdate(req.params.id, req.body, {
+    const id = toObjectId(req.params.id);
+    if (!id) return res.status(400).json({ error: 'Invalid vocabulary ID' });
+    const vocab = await Vocabulary.findByIdAndUpdate(id, req.body, {
       new: true,
       runValidators: true,
     });
@@ -81,10 +81,9 @@ router.put('/:id', async (req, res) => {
 // DELETE a vocabulary item
 router.delete('/:id', async (req, res) => {
   try {
-    if (!isValidObjectId(req.params.id)) {
-      return res.status(400).json({ error: 'Invalid vocabulary ID' });
-    }
-    const vocab = await Vocabulary.findByIdAndDelete(req.params.id);
+    const id = toObjectId(req.params.id);
+    if (!id) return res.status(400).json({ error: 'Invalid vocabulary ID' });
+    const vocab = await Vocabulary.findByIdAndDelete(id);
     if (!vocab) return res.status(404).json({ error: 'Vocabulary not found' });
     res.json({ message: 'Vocabulary deleted successfully' });
   } catch (err) {

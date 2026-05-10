@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom';
+import { HashRouter, Routes, Route, NavLink } from 'react-router-dom';
 import FlashcardPage from './pages/FlashcardPage';
 import VocabularyPage from './pages/VocabularyPage';
 import ProgressPage from './pages/ProgressPage';
@@ -6,7 +6,7 @@ import './App.css';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="app">
         <header className="app-header">
           <div className="header-inner">
@@ -38,7 +38,7 @@ function App() {
           <p>JLPT Vocabulary Flashcard App · ช่วยให้คุณเก่งภาษาญี่ปุ่น 🇯🇵</p>
         </footer>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

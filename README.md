@@ -2,6 +2,8 @@
 
 แอปพลิเคชันฝึกคำศัพท์ภาษาญี่ปุ่นสำหรับการสอบ JLPT ระดับ N5 ถึง N1 โดยใช้ระบบการ์ดแฟลช (Flashcard)
 
+🌐 **Live Demo:** [https://atikanmk.github.io/jp_self_lean/](https://atikanmk.github.io/jp_self_lean/)
+
 ## ✨ ฟีเจอร์
 
 - 🃏 **ระบบการ์ดแฟลช** — ฝึกคำศัพท์ด้วยการพลิกการ์ด
@@ -88,10 +90,16 @@ jp_self_lean/
 
 ## 🌐 Deployment
 
-### Frontend → Vercel
-1. เชื่อม repo กับ Vercel
-2. ตั้งค่า Root Directory: `frontend`
-3. ตั้ง Environment Variable: `VITE_API_URL=https://your-backend.render.com/api`
+### Frontend → GitHub Pages (อัตโนมัติ)
+
+Frontend ถูก deploy อัตโนมัติผ่าน GitHub Actions ทุกครั้งที่ push ไปที่ branch `main`
+
+**ขั้นตอนเปิดใช้งานครั้งแรก:**
+1. ไปที่ **Settings → Pages** ใน repository
+2. ตั้ง Source เป็น **Deploy from a branch** → branch `gh-pages`, folder `/ (root)`
+3. (ไม่บังคับ) ตั้ง Secret ชื่อ `VITE_API_URL` ใน **Settings → Secrets → Actions** ให้ชี้ไปที่ backend URL
+
+URL ของเว็บ: `https://atikanmk.github.io/jp_self_lean/`
 
 ### Backend → Render
 1. สร้าง Web Service ใหม่

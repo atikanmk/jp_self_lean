@@ -1,0 +1,353 @@
+[
+  {
+    "_id": "1",
+    "japanese": "食べる",
+    "reading": "たべる",
+    "thai": "กิน, รับประทาน",
+    "jlptLevel": "N5",
+    "partOfSpeech": "กริยา",
+    "example": { "japanese": "ご飯を食べる", "thai": "กินข้าว" }
+  },
+  {
+    "_id": "2",
+    "japanese": "飲む",
+    "reading": "のむ",
+    "thai": "ดื่ม",
+    "jlptLevel": "N5",
+    "partOfSpeech": "กริยา",
+    "example": { "japanese": "水を飲む", "thai": "ดื่มน้ำ" }
+  },
+  {
+    "_id": "3",
+    "japanese": "見る",
+    "reading": "みる",
+    "thai": "ดู, มอง",
+    "jlptLevel": "N5",
+    "partOfSpeech": "กริยา",
+    "example": { "japanese": "テレビを見る", "thai": "ดูทีวี" }
+  },
+  {
+    "_id": "4",
+    "japanese": "聞く",
+    "reading": "きく",
+    "thai": "ฟัง, ถาม",
+    "jlptLevel": "N5",
+    "partOfSpeech": "กริยา",
+    "example": { "japanese": "音楽を聞く", "thai": "ฟังดนตรี" }
+  },
+  {
+    "_id": "5",
+    "japanese": "話す",
+    "reading": "はなす",
+    "thai": "พูด",
+    "jlptLevel": "N5",
+    "partOfSpeech": "กริยา",
+    "example": { "japanese": "日本語を話す", "thai": "พูดภาษาญี่ปุ่น" }
+  },
+  {
+    "_id": "6",
+    "japanese": "行く",
+    "reading": "いく",
+    "thai": "ไป",
+    "jlptLevel": "N5",
+    "partOfSpeech": "กริยา",
+    "example": { "japanese": "学校に行く", "thai": "ไปโรงเรียน" }
+  },
+  {
+    "_id": "7",
+    "japanese": "来る",
+    "reading": "くる",
+    "thai": "มา",
+    "jlptLevel": "N5",
+    "partOfSpeech": "กริยา",
+    "example": { "japanese": "家に来る", "thai": "มาที่บ้าน" }
+  },
+  {
+    "_id": "8",
+    "japanese": "帰る",
+    "reading": "かえる",
+    "thai": "กลับ",
+    "jlptLevel": "N5",
+    "partOfSpeech": "กริยา",
+    "example": { "japanese": "家に帰る", "thai": "กลับบ้าน" }
+  },
+  {
+    "_id": "9",
+    "japanese": "水",
+    "reading": "みず",
+    "thai": "น้ำ",
+    "jlptLevel": "N5",
+    "partOfSpeech": "คำนาม",
+    "example": { "japanese": "水を飲みます", "thai": "ดื่มน้ำ" }
+  },
+  {
+    "_id": "10",
+    "japanese": "山",
+    "reading": "やま",
+    "thai": "ภูเขา",
+    "jlptLevel": "N5",
+    "partOfSpeech": "คำนาม",
+    "example": { "japanese": "山に登る", "thai": "ขึ้นภูเขา" }
+  },
+  {
+    "_id": "11",
+    "japanese": "川",
+    "reading": "かわ",
+    "thai": "แม่น้ำ",
+    "jlptLevel": "N5",
+    "partOfSpeech": "คำนาม",
+    "example": { "japanese": "川で泳ぐ", "thai": "ว่ายน้ำในแม่น้ำ" }
+  },
+  {
+    "_id": "12",
+    "japanese": "猫",
+    "reading": "ねこ",
+    "thai": "แมว",
+    "jlptLevel": "N5",
+    "partOfSpeech": "คำนาม",
+    "example": { "japanese": "猫がいる", "thai": "มีแมวอยู่" }
+  },
+  {
+    "_id": "13",
+    "japanese": "犬",
+    "reading": "いぬ",
+    "thai": "สุนัข",
+    "jlptLevel": "N5",
+    "partOfSpeech": "คำนาม",
+    "example": { "japanese": "犬を飼う", "thai": "เลี้ยงสุนัข" }
+  },
+  {
+    "_id": "14",
+    "japanese": "大きい",
+    "reading": "おおきい",
+    "thai": "ใหญ่",
+    "jlptLevel": "N5",
+    "partOfSpeech": "คำคุณศัพท์",
+    "example": { "japanese": "大きい家", "thai": "บ้านหลังใหญ่" }
+  },
+  {
+    "_id": "15",
+    "japanese": "小さい",
+    "reading": "ちいさい",
+    "thai": "เล็ก",
+    "jlptLevel": "N5",
+    "partOfSpeech": "คำคุณศัพท์",
+    "example": { "japanese": "小さい猫", "thai": "แมวตัวเล็ก" }
+  },
+  {
+    "_id": "16",
+    "japanese": "運動",
+    "reading": "うんどう",
+    "thai": "การออกกำลังกาย",
+    "jlptLevel": "N4",
+    "partOfSpeech": "คำนาม/กริยา",
+    "example": { "japanese": "毎日運動する", "thai": "ออกกำลังกายทุกวัน" }
+  },
+  {
+    "_id": "17",
+    "japanese": "旅行",
+    "reading": "りょこう",
+    "thai": "การท่องเที่ยว",
+    "jlptLevel": "N4",
+    "partOfSpeech": "คำนาม/กริยา",
+    "example": { "japanese": "旅行に行く", "thai": "ไปท่องเที่ยว" }
+  },
+  {
+    "_id": "18",
+    "japanese": "準備",
+    "reading": "じゅんび",
+    "thai": "การเตรียม, เตรียมพร้อม",
+    "jlptLevel": "N4",
+    "partOfSpeech": "คำนาม/กริยา",
+    "example": { "japanese": "準備をする", "thai": "เตรียมตัว" }
+  },
+  {
+    "_id": "19",
+    "japanese": "練習",
+    "reading": "れんしゅう",
+    "thai": "การฝึกซ้อม",
+    "jlptLevel": "N4",
+    "partOfSpeech": "คำนาม/กริยา",
+    "example": { "japanese": "毎日練習する", "thai": "ฝึกซ้อมทุกวัน" }
+  },
+  {
+    "_id": "20",
+    "japanese": "説明",
+    "reading": "せつめい",
+    "thai": "การอธิบาย",
+    "jlptLevel": "N4",
+    "partOfSpeech": "คำนาม/กริยา",
+    "example": { "japanese": "説明してください", "thai": "กรุณาอธิบาย" }
+  },
+  {
+    "_id": "21",
+    "japanese": "危険",
+    "reading": "きけん",
+    "thai": "อันตราย",
+    "jlptLevel": "N4",
+    "partOfSpeech": "คำนาม/คำคุณศัพท์",
+    "example": { "japanese": "危険な場所", "thai": "สถานที่อันตราย" }
+  },
+  {
+    "_id": "22",
+    "japanese": "安全",
+    "reading": "あんぜん",
+    "thai": "ปลอดภัย",
+    "jlptLevel": "N4",
+    "partOfSpeech": "คำนาม/คำคุณศัพท์",
+    "example": { "japanese": "安全な道", "thai": "ถนนที่ปลอดภัย" }
+  },
+  {
+    "_id": "23",
+    "japanese": "経験",
+    "reading": "けいけん",
+    "thai": "ประสบการณ์",
+    "jlptLevel": "N4",
+    "partOfSpeech": "คำนาม/กริยา",
+    "example": { "japanese": "経験がある", "thai": "มีประสบการณ์" }
+  },
+  {
+    "_id": "24",
+    "japanese": "影響",
+    "reading": "えいきょう",
+    "thai": "อิทธิพล, ผลกระทบ",
+    "jlptLevel": "N3",
+    "partOfSpeech": "คำนาม/กริยา",
+    "example": { "japanese": "影響を与える", "thai": "ให้ผลกระทบ" }
+  },
+  {
+    "_id": "25",
+    "japanese": "判断",
+    "reading": "はんだん",
+    "thai": "การตัดสิน, การวินิจฉัย",
+    "jlptLevel": "N3",
+    "partOfSpeech": "คำนาม/กริยา",
+    "example": { "japanese": "判断する", "thai": "ตัดสินใจ" }
+  },
+  {
+    "_id": "26",
+    "japanese": "改善",
+    "reading": "かいぜん",
+    "thai": "การปรับปรุง",
+    "jlptLevel": "N3",
+    "partOfSpeech": "คำนาม/กริยา",
+    "example": { "japanese": "状況を改善する", "thai": "ปรับปรุงสถานการณ์" }
+  },
+  {
+    "_id": "27",
+    "japanese": "確認",
+    "reading": "かくにん",
+    "thai": "การยืนยัน, การตรวจสอบ",
+    "jlptLevel": "N3",
+    "partOfSpeech": "คำนาม/กริยา",
+    "example": { "japanese": "確認してください", "thai": "กรุณาตรวจสอบ" }
+  },
+  {
+    "_id": "28",
+    "japanese": "複雑",
+    "reading": "ふくざつ",
+    "thai": "ซับซ้อน",
+    "jlptLevel": "N3",
+    "partOfSpeech": "คำคุณศัพท์",
+    "example": { "japanese": "複雑な問題", "thai": "ปัญหาซับซ้อน" }
+  },
+  {
+    "_id": "29",
+    "japanese": "比較",
+    "reading": "ひかく",
+    "thai": "การเปรียบเทียบ",
+    "jlptLevel": "N3",
+    "partOfSpeech": "คำนาม/กริยา",
+    "example": { "japanese": "価格を比較する", "thai": "เปรียบเทียบราคา" }
+  },
+  {
+    "_id": "30",
+    "japanese": "概念",
+    "reading": "がいねん",
+    "thai": "แนวคิด, มโนทัศน์",
+    "jlptLevel": "N2",
+    "partOfSpeech": "คำนาม",
+    "example": { "japanese": "概念を理解する", "thai": "เข้าใจแนวคิด" }
+  },
+  {
+    "_id": "31",
+    "japanese": "傾向",
+    "reading": "けいこう",
+    "thai": "แนวโน้ม",
+    "jlptLevel": "N2",
+    "partOfSpeech": "คำนาม",
+    "example": { "japanese": "傾向がある", "thai": "มีแนวโน้ม" }
+  },
+  {
+    "_id": "32",
+    "japanese": "矛盾",
+    "reading": "むじゅん",
+    "thai": "ความขัดแย้ง, ความไม่สอดคล้อง",
+    "jlptLevel": "N2",
+    "partOfSpeech": "คำนาม/กริยา",
+    "example": { "japanese": "矛盾している", "thai": "ขัดแย้งกัน" }
+  },
+  {
+    "_id": "33",
+    "japanese": "普及",
+    "reading": "ふきゅう",
+    "thai": "การแพร่หลาย, การเผยแพร่",
+    "jlptLevel": "N2",
+    "partOfSpeech": "คำนาม/กริยา",
+    "example": { "japanese": "普及する", "thai": "แพร่หลาย" }
+  },
+  {
+    "_id": "34",
+    "japanese": "妥当",
+    "reading": "だとう",
+    "thai": "เหมาะสม, สมเหตุสมผล",
+    "jlptLevel": "N2",
+    "partOfSpeech": "คำคุณศัพท์",
+    "example": { "japanese": "妥当な判断", "thai": "การตัดสินใจที่สมเหตุสมผล" }
+  },
+  {
+    "_id": "35",
+    "japanese": "懸念",
+    "reading": "けねん",
+    "thai": "ความกังวล",
+    "jlptLevel": "N1",
+    "partOfSpeech": "คำนาม/กริยา",
+    "example": { "japanese": "懸念を抱く", "thai": "รู้สึกกังวล" }
+  },
+  {
+    "_id": "36",
+    "japanese": "顕著",
+    "reading": "けんちょ",
+    "thai": "เด่นชัด, โดดเด่น",
+    "jlptLevel": "N1",
+    "partOfSpeech": "คำคุณศัพท์",
+    "example": { "japanese": "顕著な変化", "thai": "การเปลี่ยนแปลงที่เด่นชัด" }
+  },
+  {
+    "_id": "37",
+    "japanese": "把握",
+    "reading": "はあく",
+    "thai": "การเข้าใจ, การจับใจความ",
+    "jlptLevel": "N1",
+    "partOfSpeech": "คำนาม/กริยา",
+    "example": { "japanese": "状況を把握する", "thai": "เข้าใจสถานการณ์" }
+  },
+  {
+    "_id": "38",
+    "japanese": "抽象",
+    "reading": "ちゅうしょう",
+    "thai": "นามธรรม",
+    "jlptLevel": "N1",
+    "partOfSpeech": "คำนาม/คำคุณศัพท์",
+    "example": { "japanese": "抽象的な概念", "thai": "แนวคิดนามธรรม" }
+  },
+  {
+    "_id": "39",
+    "japanese": "逸脱",
+    "reading": "いつだつ",
+    "thai": "การเบี่ยงเบน, การหลุดออกจาก",
+    "jlptLevel": "N1",
+    "partOfSpeech": "คำนาม/กริยา",
+    "example": { "japanese": "ルールから逸脱する", "thai": "เบี่ยงเบนจากกฎ" }
+  }
+]

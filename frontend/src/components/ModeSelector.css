@@ -1,0 +1,46 @@
+.mode-selector {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.selector-label {
+  font-size: 0.85rem;
+  color: #7f8c8d;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.mode-toggle {
+  display: flex;
+  gap: 0;
+  border: 2px solid #e74c3c;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.mode-btn {
+  padding: 8px 16px;
+  background: white;
+  color: #e74c3c;
+  border: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  white-space: nowrap;
+}
+
+.mode-btn + .mode-btn {
+  border-left: 1px solid #e74c3c;
+}
+
+.mode-btn.active {
+  background: #e74c3c;
+  color: white;
+}
+
+.mode-btn:hover:not(.active) {
+  background: #fdf0ef;
+}

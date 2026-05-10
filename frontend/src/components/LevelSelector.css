@@ -1,0 +1,42 @@
+.level-selector {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.selector-label {
+  font-size: 0.85rem;
+  color: #7f8c8d;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.level-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.level-btn {
+  padding: 7px 16px;
+  border-radius: 20px;
+  border: 2px solid #e0e0e0;
+  background: white;
+  color: #5d6d7e;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.level-btn:hover {
+  border-color: #bdc3c7;
+  background: #f8f9fa;
+}
+
+.level-btn.active {
+  color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transform: translateY(-1px);
+}

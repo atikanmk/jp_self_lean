@@ -1,0 +1,254 @@
+.progress-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.page-title {
+  font-size: 1.6rem;
+  color: #2c3e50;
+  margin-bottom: 4px;
+}
+
+.page-subtitle {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+/* Summary cards */
+.summary-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 16px;
+}
+
+.summary-card {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+
+.summary-number {
+  font-size: 2.2rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.summary-label {
+  font-size: 0.78rem;
+  color: #7f8c8d;
+  font-weight: 500;
+}
+
+.summary-card.total .summary-number { color: #2c3e50; }
+.summary-card.correct .summary-number { color: #27ae60; }
+.summary-card.incorrect .summary-number { color: #e74c3c; }
+.summary-card.accuracy .summary-number { color: #3498db; }
+
+/* Accuracy bar */
+.accuracy-bar-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.accuracy-bar-bg {
+  flex: 1;
+  height: 10px;
+  background: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.accuracy-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #27ae60, #2ecc71);
+  border-radius: 5px;
+  transition: width 0.6s ease;
+}
+
+.accuracy-bar-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #27ae60;
+  white-space: nowrap;
+}
+
+/* Empty */
+.empty-progress {
+  text-align: center;
+  padding: 48px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  color: #7f8c8d;
+}
+
+.empty-icon {
+  font-size: 3rem;
+}
+
+/* Level sections */
+.level-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.level-section-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  background: #f8f9fa;
+  border-radius: 0 8px 8px 0;
+}
+
+.level-badge {
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 12px;
+}
+
+.level-count {
+  font-size: 0.85rem;
+  color: #7f8c8d;
+}
+
+.detail-table-wrap {
+  overflow-x: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+}
+
+.detail-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  min-width: 600px;
+}
+
+.detail-table th {
+  background: #2c3e50;
+  color: white;
+  padding: 10px 14px;
+  font-size: 0.8rem;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.detail-table th:first-child { border-radius: 12px 0 0 0; }
+.detail-table th:last-child { border-radius: 0 12px 0 0; }
+
+.detail-table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 0.88rem;
+}
+
+.detail-table tr:last-child td {
+  border-bottom: none;
+}
+
+.jp-cell {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.reading-cell {
+  color: #7f8c8d;
+  font-size: 0.82rem;
+}
+
+.correct-cell { color: #27ae60; font-weight: 700; }
+.incorrect-cell { color: #e74c3c; font-weight: 700; }
+
+.mode-chip {
+  font-size: 0.85rem;
+}
+
+.mini-acc {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mini-bar-bg {
+  width: 60px;
+  height: 6px;
+  background: #e0e0e0;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.mini-bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.4s;
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: #e74c3c;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #c0392b;
+}
+
+.btn-outline-red {
+  background: transparent;
+  color: #e74c3c;
+  border: 2px solid #e74c3c;
+  cursor: pointer;
+}
+
+.btn-outline-red:hover {
+  background: #fdf0ef;
+}
+
+.loading-msg {
+  text-align: center;
+  color: #7f8c8d;
+  padding: 32px;
+}
+
+.error-msg {
+  color: #c0392b;
+  background: #fdf0ef;
+  padding: 12px 16px;
+  border-radius: 10px;
+}

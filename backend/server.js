@@ -2,6 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
+const rateLimit = require('express-rate-limit');
 
 const vocabularyRoutes = require('./routes/vocabulary');
 const progressRoutes = require('./routes/progress');
@@ -10,9 +11,19 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/jp_self_learn';
 
+// Rate limiting: max 100 requests per 15 minutes per IP
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 100,
+  standardHeaders: true,
+  legacyHeaders: false,
+  message: { error: 'Too many requests, please try again later.' },
+});
+
 // Middleware
 app.use(cors());
 app.use(express.json());
+app.use('/api/', limiter);
 
 // Routes
 app.use('/api/vocabulary', vocabularyRoutes);

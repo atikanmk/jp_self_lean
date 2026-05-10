@@ -2,7 +2,7 @@
 export function getSessionId() {
   let sessionId = localStorage.getItem('jlpt_session_id');
   if (!sessionId) {
-    sessionId = `session_${Date.now()}_${Math.random().toString(36).slice(2, 9)}`;
+    sessionId = `session_${crypto.randomUUID()}`;
     localStorage.setItem('jlpt_session_id', sessionId);
   }
   return sessionId;
